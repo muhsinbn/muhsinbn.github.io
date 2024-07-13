@@ -7,5 +7,28 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        {% if 'username' in session %}
+          <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        {% else %}
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li><a href="{{ url_for('register') }}">Register</a></li>
+          <li><a href="{{ url_for('admin_register') }}">Admin Register</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
   <div class="container">
-    <h2>Home
+    <h2>{{ message }}</h2>
+    {% if 'username' in session %}
+      <p>Welcome to the TRAIN BOOKING SYSTEM!</p>
+    {% else %}
+      <p>Please log in to continue.</p>
+    {% endif %}
+  </div>
+</body>
+</html>
+

@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('register') }}">Register</a></li>
+        <li><a href="{{ url_for('admin_register') }}">Admin Register</a></li>
+      </ul>
+    </nav>
+  </header>
   <div class="container">
     <h2>Admin Register</h2>
     <form method="post">
@@ -37,3 +47,4 @@
   </div>
 </body>
 </html>
+
