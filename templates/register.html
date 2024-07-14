@@ -19,7 +19,7 @@
   </header>
   <div class="container">
     <h2>Register</h2>
-    <form method="post">
+    <form method="POST" action="">
       <div class="form-group">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
@@ -34,17 +34,10 @@
       </div>
       <button type="submit">Register</button>
     </form>
-    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
+    <a href="{{ url_for('login') }}">Already have an account? Sign in</a>
         <ul>
-          {% for category, message in messages %}
-            <li class="{{ category }}">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+          <li class="{{ category }}"></li>
+          </ul>
   </div>
 </body>
 </html>
-
