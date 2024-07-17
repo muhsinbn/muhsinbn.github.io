@@ -3,24 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TRAIN BOOKING SYSTEM</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>TRAINBUK</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <div class="cover-content">
+    <h3><center>WELCOME TO TRAIN BOOKING AND RESERVATION SYSTEM</center></h3>
+    <p><center><h4>This is a portfolio project for the Holberton School Project</h4></center></p>
+
+  </div>
   <header>
     <nav>
       <ul>
-        <li><a href="{{ url_for('login') }}">Login</a></li>
-        <li><a href="{{ url_for('register') }}">Register</a></li>
-        <li><a href="{{ url_for('admin_register') }}">Admin Register</a></li>
+        <li><a href="login">Home</a></li>
+        <li><a href="login">Login</a></li>
+        <li><a href="register">Register</a></li>
+        <li><a href="admin_register">Admin Register</a></li>
+        <li><a href="login">About Us</a></li>
+        <li><a href="login">Contact Us</a></li>
       </ul>
     </nav>
   </header>
   <section class="cover">
-    <div class="cover-content">
-      <h1>TRAIN BOOKING SYSTEM</h1>
-      <p>This is a portfolio project for the Holberton School Project</p>
-    </div>
+    
   </section>
 </body>
 </html>

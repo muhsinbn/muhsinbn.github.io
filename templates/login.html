@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="{{ url_for('index') }}">Home</a></li>
-        <li><a href="{{ url_for('login') }}">Login</a></li>
-        <li><a href="{{ url_for('register') }}">Register</a></li>
-        <li><a href="{{ url_for('admin_register') }}">Admin Register</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="login">Login</a></li>
+        <li><a href="register">Register</a></li>
+        <li><a href="admin_register">Admin Register</a></li>
       </ul>
     </nav>
   </header>
@@ -30,10 +30,10 @@
       </div>
       <button type="submit">Login</button>
     </form>
-    <a href="{{ url_for('register') }}">Don't have an account? Sign up</a>
-    <a href="{{ url_for('admin_register') }}">Admin ? Sign up</a>
+    <a href="register">Don't have an account? Sign up</a>
+    <a href="admin_register">Admin ? Sign up</a>
         <ul>
-		<li class="{{ category }}"></li>
+		<li class=""></li>
          </ul>
   </div>
 </body>
